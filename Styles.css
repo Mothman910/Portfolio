@@ -773,6 +773,7 @@ audio {
   background: #fff;
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: visible;
 }
 
 .hovereffect .portfolio-img {
@@ -1044,4 +1045,11 @@ h2.aos-animate {
 .video-test {
   max-height: fit-content;
   max-width: 100vw;
+}
+
+#test-lot {
+  width: 20%;
+  position: absolute;
+  top: -60px;
+  z-index: 999;
 }

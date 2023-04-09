@@ -400,6 +400,7 @@
             <img src="./JPEG/11.jpg" alt="graphics" />
             <h3>
               <span>Miejsce na projekt</span>
+
             </h3>
           </div>
           <div class="overlay">
@@ -408,6 +409,7 @@
                   aria-hidden="true"></i></a>
             </div>
           </div>
+          <div id="test-lot"></div>
         </div>
         <div class="hovereffect">
           <div class="portfolio-img">
@@ -501,10 +503,28 @@
   <script src="./JS/mixitup.min.js"></script>
   <!-- <script src="./JS/ms-tools.js"></script> -->
   <script src="./JS/tilt.jquery.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/lottie-web@5.10.2/build/player/lottie.min.js'></script>
   <script>
     window.addEventListener('load', function () {
       var audio = document.querySelector('audio');
       audio.volume = 0.25;
+    });
+  </script>
+  <script>
+    let element = document.getElementById('test-lot');
+    lottie.loadAnimation({
+      container: element, // the dom element that will contain the animation
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      path: './Klepsydra.json' // the path to the animation json
+    });
+    //------------efekt hover------------//
+    element.addEventListener('mouseenter', function () {
+      lottie.play();
+    });
+    element.addEventListener('mouseleave', function () {
+      lottie.stop();
     });
   </script>
 </body>
