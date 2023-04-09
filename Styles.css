@@ -1053,3 +1053,7 @@ h2.aos-animate {
   top: -60px;
   z-index: 999;
 }
+
+.opacity {
+  filter: opacity(0);
+}
