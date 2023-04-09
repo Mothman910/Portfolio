@@ -1014,3 +1014,34 @@ audio {
     opacity: 0;
   }
 }
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+h2.aos-animate {
+  animation: tracking-in-contract-bck 1s;
+}
+
+.test {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-auto-rows: fit-content;
+}
+
+.video-test {
+  max-height: fit-content;
+  max-width: 100vw;
+}

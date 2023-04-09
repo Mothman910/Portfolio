@@ -295,6 +295,12 @@
 
   .section-title {
     padding-bottom: 30px;
+
+    background-image: url("../JPEG/22.jpg");
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .section-title h2 {
     font-size: 24px;
