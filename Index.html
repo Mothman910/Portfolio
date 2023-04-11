@@ -411,7 +411,7 @@
           </div>
           <div id="test-lot"></div>
         </div>
-        <div class="hovereffect">
+        <div id="test-reactive" class="hovereffect">
           <div class="portfolio-img">
             <img src="./JPEG/22.jpg" alt="design" />
             <h3>
@@ -483,12 +483,6 @@
         </div>
       </div>
     </section>
-    <section class="test">
-      <video class="video-test" autoplay loop muted playsinline>
-        <source src="./Comp 1_1.mp4" video/mp4">
-        Twoja przeglądarka nie obsługuje odtwarzania filmów.
-      </video>
-    </section>
   </div>
 
   <div class="ms-cursor"></div>
@@ -516,8 +510,8 @@
       container: element, // the dom element that will contain the animation
       renderer: 'svg',
       loop: true,
-      autoplay: false,
-      path: './Klepsydra.json' // the path to the animation json
+      autoplay: true,
+      path: './bluedot.json' // the path to the animation json
     });
     //------------efekt hover------------//
     element.addEventListener('mouseenter', function () {
@@ -525,6 +519,15 @@
     });
     element.addEventListener('mouseleave', function () {
       lottie.stop();
+    });
+  </script>
+  <script>
+    let elementReaktywny = document.getElementById('test-reactive');
+    element.addEventListener('mouseenter', function () {
+      elementReaktywny.classList.add('opacity');
+    });
+    element.addEventListener('mouseleave', function () {
+      elementReaktywny.classList.remove('opacity');
     });
   </script>
 </body>
